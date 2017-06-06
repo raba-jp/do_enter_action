@@ -15,3 +15,6 @@ function fish_user_key_bindings
   bind \r enter_action
 end
 ```
+
+## License
+MIT
