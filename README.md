@@ -16,5 +16,8 @@ function fish_user_key_bindings
 end
 ```
 
+## Optional
+If `exa` installed, this plugin uses it.
+
 ## License
 MIT

@@ -2,7 +2,12 @@ function enter_action
 	test -n $argv; and return 0
 	echo
 	echo (set_color yellow)"----- list files -----"(set_color normal)
-	ls -alG
+	type exa > /dev/null 2>&1
+	if test $status -eq 0
+		exa -ahlGx --git --sort Name --time-style long-iso
+	else
+		ls -alG
+	end
 
 	set -l file_changed (git rev-parse --is-inside-work-tree 2> /dev/null)
 	if test "$file_changed" = 'true'
