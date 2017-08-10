@@ -4,7 +4,7 @@ function enter_action
 	echo (set_color yellow)"----- list files -----"(set_color normal)
 	type exa > /dev/null 2>&1
 	if test $status -eq 0
-		exa -ahl --git --sort Name --time-style long-iso
+		exa -ahlG --git --sort Name --time-style long-iso
 	else
 		ls -alG
 	end
