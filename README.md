@@ -1,11 +1,11 @@
-# fish-plugin-enter-action
+# do_enter_action
 
 This script displays current file list, git status and my last commit.
 
 ## Installation
 ### fisherman
 ```
-fisher raba-jp/fish-plugin-enter-action
+fisher raba-jp/do_enter_action
 ```
 
 ## Example
