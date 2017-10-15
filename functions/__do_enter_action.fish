@@ -13,7 +13,8 @@ function __do_enter_action
     echo
     echo (set_color yellow)"----- git status -----"(set_color normal)
     git status --short --branch
-  echo
+    echo
+  end
 
   [ -z (git config --get --local user.name 2> /dev/null) ]; and return 0
   [ -z (git log -n 1 --oneline --author=$user_name 2> /dev/null) ]; and return 0
