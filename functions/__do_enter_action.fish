@@ -1,4 +1,4 @@
-function enter_action
+function __do_enter_action
   function is_exist_exa
     type exa > /dev/null 2>&1
     echo $status
