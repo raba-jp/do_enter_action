@@ -7,7 +7,7 @@ function __do_enter_action
   function list_files
     echo
     echo (set_color yellow)"----- list files -----"(set_color normal)
-    [ (is_exist_exa) -eq 0 ]; and exa -ahlG --git --sort Name --time-style long-iso; or ls -alG
+    [ (is_exist_exa) -eq 0 ]; and exa -ahlG --git --sort Name --time-style long-iso; or command ls -alG
   end
 
   function git_status
